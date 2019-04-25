@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<settings>
+	<!--
+		Lazy Loading（遅延読み込み）の有効／無効を切り替えるグローバルな設定です。-->
+        <setting name="lazyLoadingEnabled" value="true" />
+        <!-- 列名の代わりに列ラベルを使用します。  -->
+        <setting name="useColumnLabel" value="true" />
+        <!-- データベースにある A_COLUMN のようなアンダースコアを含む列をCamel Case の Java プロパティ aColumn に自動的にマッピングする機能の有効／無効を切り替えます。 -->
+        <setting name="mapUnderscoreToCamelCase" value="false" />
+	</settings>
+</configuration>

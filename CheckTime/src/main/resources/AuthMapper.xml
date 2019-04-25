@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mapper namespace="com.example.demo.AuthMapper">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO todo (title, details, finished) VALUES (#{title}, #{details}, #{finished})
+    </insert>
+    <select id="select" resultType="com.example.demo.AuthForm">
+        SELECT count(*)
+          FROM personal_infomation
+           WHERE mailadress = #{mailadress}
+           AND
+           pass = #{pass}
+    </select>
+</mapper>
